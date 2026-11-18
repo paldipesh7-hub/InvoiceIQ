@@ -1,0 +1,4 @@
+data_split,Total_Records,Start_Date,End_Date,Available_Regression_Targets,Unknown_Payment_Outcomes,Early_Payments,On_Time_Payments,Late_Payments,Percentage_of_Dataset
+test,503537,2025-07-01,2025-12-31,342120,161417,328597,13523,0,25.18
+train,1001116,2024-01-01,2024-12-31,680398,320718,653476,26922,0,50.06
+validation,495347,2025-01-01,2025-06-30,336301,159046,322994,13307,0,24.77

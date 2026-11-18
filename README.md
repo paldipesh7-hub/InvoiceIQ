@@ -160,28 +160,131 @@ Payment Delay and Days to Pay must also be excluded from features used for predi
 - Outstanding invoice ageing analysis.
 - Machine learning feasibility observations.
 - Project documentation and submission report.
-## Next Steps
 
-- Exploratory Data Analysis (EDA)
-- Data visualisation
-- Feature engineering
-- Payment-status analysis
-- Predictive modelling
-- Model evaluation
 
-## Next Steps
+## Week 3 – Feature Engineering and ML Dataset Preparation
 
-- Feature selection and feature engineering.
-- Machine learning dataset preparation.
-- Model development and training.
-- Model evaluation and performance comparison.
-- Payment-status prediction.
-- Cash-flow intelligence and reporting.
-- Development of the InvoiceIQ web application.
+The objective of Week 3 was to transform the cleaned invoice dataset into machine-learning-ready features while maintaining chronological separation, preventing data leakage, and preparing datasets for regression modelling.
+
+### Feature Engineering Activities
+
+1. Created invoice time-based features, including invoice month, weekday, month-end indicator and payment-term days.
+2. Generated historical customer behaviour features using only eligible previous invoices and payment records.
+3. Created customer and same-currency historical amount features.
+4. Developed amount buckets using quartile boundaries calculated exclusively from the training dataset.
+5. Applied chronological train, validation and test splitting based on invoice dates.
+6. Built numerical, categorical and frequency-encoding preprocessing pipelines.
+7. Applied training-only imputation, scaling, categorical encoding and frequency mapping.
+8. Audited predictor features for target leakage.
+9. Saved sparse feature matrices, target arrays, preprocessing objects and feature catalogues.
+10. Reloaded saved deliverables and verified their consistency.
+
+### Chronological Data Split
+
+| Dataset | Records | Invoice Date Range |
+|---|---:|---|
+| Training | 1,001,116 | 2024-01-01 to 2024-12-31 |
+| Validation | 495,347 | 2025-01-01 to 2025-06-30 |
+| Testing | 503,537 | 2025-07-01 to 2025-12-31 |
+
+The regression datasets contain paid invoices with known payment-delay targets.
+
+| Regression dataset | Records |
+|---|---:|
+| Training | 680,398 |
+| Validation | 336,301 |
+| Testing | 342,120 |
+
+### Final ML Feature Set
+
+The final pipeline contains 31 raw predictor columns before encoding.
+
+| Raw feature group | Count |
+|---|---:|
+| Numerical | 20 |
+| Categorical | 10 |
+| Frequency encoded | 1 |
+| Total | 31 |
+
+After preprocessing, the final feature matrices contain 193 predictor features.
+
+| Encoded feature group | Count |
+|---|---:|
+| Numerical | 20 |
+| One-hot encoded categorical | 172 |
+| Frequency encoded | 1 |
+| Total | 193 |
+
+The final feature matrices are stored in sparse CSR format.
+
+### Amount Bucket Engineering
+
+The total invoice amount was divided into four categories:
+
+- Low Amount
+- Medium Amount
+- High Amount
+- Very High Amount
+
+The quartile boundaries were calculated using training data only:
+
+- Q1: 9,487.945
+- Q2: 25,372.315
+- Q3: 51,515.99
+
+The same boundaries were applied to the training, validation and testing datasets.
+
+### Leakage Prevention and Validation
+
+- Chronological splitting was used to preserve the time order of invoices.
+- Preprocessing components were fitted using training data only.
+- Historical customer features used eligible earlier records.
+- Same-day records were excluded from historical calculations.
+- Outcome-related columns were excluded from model predictors.
+- An independent point-in-time audit checked 1,000 feature comparisons, with zero failures.
+- Saved deliverables passed all nine reload verification checks.
+
+### Week 3 Deliverables
+
+The following 13 files were saved in `data/processed/`:
+
+- X_train.npz
+- X_validation.npz
+- X_test.npz
+- y_train.npy
+- y_validation.npy
+- y_test.npy
+- feature_catalogue.csv
+- detailed_feature_catalogue.csv
+- preprocessor.joblib
+- sales_rep_frequency_map.joblib
+- chronological_split_summary.csv
+- leakage_audit.csv
+- amount_bucket_config.joblib
+
+Additional documentation:
+
+- Week 3 Feature Engineering Jupyter Notebook.
+- Week 3 Feature Engineering Report.
+- Updated project README.
+
+### Important Modelling Limitation
+
+The verified paid invoices contain no positive late-payment examples. The observed payment-delay target ranges from -60 to 0 days.
+
+Therefore:
+
+- A reliable paid-late classification model cannot currently be trained.
+- Regression modelling is limited to observed early and on-time payment delays.
+- Model performance on actual late payments cannot be established using the current dataset.
+- Additional representative late-payment data may be required.
+
+## Upcoming Work
+
+Future tasks will follow the internship organisation's assigned Week 4 requirements and subsequent project milestones.
 
 ---
 
 **Project:** InvoiceIQ  
 **Internship:** AI/ML Internship  
-**Stage:** Week 1 – Data Cleaning
-**Stage:** Week 2 – Exploratory Data Analysis (EDA)
+**Current Stage:** Week 3 – Feature Engineering and ML Dataset Preparation

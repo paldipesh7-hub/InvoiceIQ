@@ -1,0 +1,194 @@
+Feature_Number,Feature_Name,Feature_Group,Source_Column,Preprocessing_Method
+1,numeric__quantity,Numerical,quantity,Median Imputation + StandardScaler
+2,numeric__unit_price,Numerical,unit_price,Median Imputation + StandardScaler
+3,numeric__discount_percent,Numerical,discount_percent,Median Imputation + StandardScaler
+4,numeric__tax_percent,Numerical,tax_percent,Median Imputation + StandardScaler
+5,numeric__subtotal,Numerical,subtotal,Median Imputation + StandardScaler
+6,numeric__discount_amount,Numerical,discount_amount,Median Imputation + StandardScaler
+7,numeric__tax_amount,Numerical,tax_amount,Median Imputation + StandardScaler
+8,numeric__shipping_cost,Numerical,shipping_cost,Median Imputation + StandardScaler
+9,numeric__total_amount,Numerical,total_amount,Median Imputation + StandardScaler
+10,numeric__invoice_month,Numerical,invoice_month,Median Imputation + StandardScaler
+11,numeric__invoice_weekday,Numerical,invoice_weekday,Median Imputation + StandardScaler
+12,numeric__is_month_end,Numerical,is_month_end,Median Imputation + StandardScaler
+13,numeric__payment_term_days,Numerical,payment_term_days,Median Imputation + StandardScaler
+14,numeric__customer_previous_invoice_count,Numerical,customer_previous_invoice_count,Median Imputation + StandardScaler
+15,numeric__customer_previous_avg_delay,Numerical,customer_previous_avg_delay,Median Imputation + StandardScaler
+16,numeric__customer_currency_previous_avg_amount,Numerical,customer_currency_previous_avg_amount,Median Imputation + StandardScaler
+17,numeric__customer_amount_vs_history_log,Numerical,customer_amount_vs_history_log,Median Imputation + StandardScaler
+18,numeric__customer_no_invoice_history,Numerical,customer_no_invoice_history,Median Imputation + StandardScaler
+19,numeric__customer_no_payment_history,Numerical,customer_no_payment_history,Median Imputation + StandardScaler
+20,numeric__customer_no_same_currency_history,Numerical,customer_no_same_currency_history,Median Imputation + StandardScaler
+21,categorical__currency_AUD,Categorical,currency_AUD,Most Frequent Imputation + One-Hot Encoding
+22,categorical__currency_CAD,Categorical,currency_CAD,Most Frequent Imputation + One-Hot Encoding
+23,categorical__currency_EUR,Categorical,currency_EUR,Most Frequent Imputation + One-Hot Encoding
+24,categorical__currency_GBP,Categorical,currency_GBP,Most Frequent Imputation + One-Hot Encoding
+25,categorical__currency_INR,Categorical,currency_INR,Most Frequent Imputation + One-Hot Encoding
+26,categorical__currency_USD,Categorical,currency_USD,Most Frequent Imputation + One-Hot Encoding
+27,categorical__payment_method_Bank Transfer,Categorical,payment_method_Bank Transfer,Most Frequent Imputation + One-Hot Encoding
+28,categorical__payment_method_Cash,Categorical,payment_method_Cash,Most Frequent Imputation + One-Hot Encoding
+29,categorical__payment_method_Cheque,Categorical,payment_method_Cheque,Most Frequent Imputation + One-Hot Encoding
+30,categorical__payment_method_Credit Card,Categorical,payment_method_Credit Card,Most Frequent Imputation + One-Hot Encoding
+31,categorical__payment_method_Debit Card,Categorical,payment_method_Debit Card,Most Frequent Imputation + One-Hot Encoding
+32,categorical__payment_method_Digital Wallet,Categorical,payment_method_Digital Wallet,Most Frequent Imputation + One-Hot Encoding
+33,categorical__payment_method_UPI,Categorical,payment_method_UPI,Most Frequent Imputation + One-Hot Encoding
+34,categorical__order_channel_Email,Categorical,order_channel_Email,Most Frequent Imputation + One-Hot Encoding
+35,categorical__order_channel_Marketplace,Categorical,order_channel_Marketplace,Most Frequent Imputation + One-Hot Encoding
+36,categorical__order_channel_Online Portal,Categorical,order_channel_Online Portal,Most Frequent Imputation + One-Hot Encoding
+37,categorical__order_channel_Phone Order,Categorical,order_channel_Phone Order,Most Frequent Imputation + One-Hot Encoding
+38,categorical__order_channel_Sales Rep,Categorical,order_channel_Sales Rep,Most Frequent Imputation + One-Hot Encoding
+39,categorical__order_channel_Walk-in,Categorical,order_channel_Walk-in,Most Frequent Imputation + One-Hot Encoding
+40,categorical__product_category_Apparel,Categorical,product_category_Apparel,Most Frequent Imputation + One-Hot Encoding
+41,categorical__product_category_Electronics,Categorical,product_category_Electronics,Most Frequent Imputation + One-Hot Encoding
+42,categorical__product_category_Furniture,Categorical,product_category_Furniture,Most Frequent Imputation + One-Hot Encoding
+43,categorical__product_category_Groceries,Categorical,product_category_Groceries,Most Frequent Imputation + One-Hot Encoding
+44,categorical__product_category_Industrial,Categorical,product_category_Industrial,Most Frequent Imputation + One-Hot Encoding
+45,categorical__product_category_Office Supplies,Categorical,product_category_Office Supplies,Most Frequent Imputation + One-Hot Encoding
+46,categorical__product_category_Packaging,Categorical,product_category_Packaging,Most Frequent Imputation + One-Hot Encoding
+47,categorical__product_category_Software,Categorical,product_category_Software,Most Frequent Imputation + One-Hot Encoding
+48,categorical__product_name_A4 Paper Ream,Categorical,product_name_A4 Paper Ream,Most Frequent Imputation + One-Hot Encoding
+49,categorical__product_name_Antivirus License 1yr,Categorical,product_name_Antivirus License 1yr,Most Frequent Imputation + One-Hot Encoding
+50,categorical__product_name_Ballpoint Pen Pack,Categorical,product_name_Ballpoint Pen Pack,Most Frequent Imputation + One-Hot Encoding
+51,categorical__product_name_Basmati Rice 25kg,Categorical,product_name_Basmati Rice 25kg,Most Frequent Imputation + One-Hot Encoding
+52,categorical__product_name_Bluetooth Speaker,Categorical,product_name_Bluetooth Speaker,Most Frequent Imputation + One-Hot Encoding
+53,categorical__product_name_Bookshelf 5-Tier,Categorical,product_name_Bookshelf 5-Tier,Most Frequent Imputation + One-Hot Encoding
+54,categorical__product_name_Bubble Wrap Roll,Categorical,product_name_Bubble Wrap Roll,Most Frequent Imputation + One-Hot Encoding
+55,categorical__product_name_Cable Reel 50m,Categorical,product_name_Cable Reel 50m,Most Frequent Imputation + One-Hot Encoding
+56,categorical__product_name_Cardboard Box Medium,Categorical,product_name_Cardboard Box Medium,Most Frequent Imputation + One-Hot Encoding
+57,categorical__product_name_Cloud Storage Plan,Categorical,product_name_Cloud Storage Plan,Most Frequent Imputation + One-Hot Encoding
+58,categorical__product_name_Conference Table,Categorical,product_name_Conference Table,Most Frequent Imputation + One-Hot Encoding
+59,categorical__product_name_Cooking Oil 15L,Categorical,product_name_Cooking Oil 15L,Most Frequent Imputation + One-Hot Encoding
+60,categorical__product_name_Cotton T-Shirt Pack,Categorical,product_name_Cotton T-Shirt Pack,Most Frequent Imputation + One-Hot Encoding
+61,categorical__product_name_Design Suite License,Categorical,product_name_Design Suite License,Most Frequent Imputation + One-Hot Encoding
+62,categorical__product_name_Desk Organizer,Categorical,product_name_Desk Organizer,Most Frequent Imputation + One-Hot Encoding
+63,categorical__product_name_File Folder Box,Categorical,product_name_File Folder Box,Most Frequent Imputation + One-Hot Encoding
+64,categorical__product_name_Filing Cabinet,Categorical,product_name_Filing Cabinet,Most Frequent Imputation + One-Hot Encoding
+65,categorical__product_name_Hydraulic Pump,Categorical,product_name_Hydraulic Pump,Most Frequent Imputation + One-Hot Encoding
+66,categorical__product_name_LED Monitor,Categorical,product_name_LED Monitor,Most Frequent Imputation + One-Hot Encoding
+67,categorical__product_name_Mechanical Keyboard,Categorical,product_name_Mechanical Keyboard,Most Frequent Imputation + One-Hot Encoding
+68,categorical__product_name_Noise Cancelling Headphones,Categorical,product_name_Noise Cancelling Headphones,Most Frequent Imputation + One-Hot Encoding
+69,categorical__product_name_OS License,Categorical,product_name_OS License,Most Frequent Imputation + One-Hot Encoding
+70,categorical__product_name_Office Chair Ergo,Categorical,product_name_Office Chair Ergo,Most Frequent Imputation + One-Hot Encoding
+71,categorical__product_name_Packing Tape Pack,Categorical,product_name_Packing Tape Pack,Most Frequent Imputation + One-Hot Encoding
+72,categorical__product_name_Power Bank,Categorical,product_name_Power Bank,Most Frequent Imputation + One-Hot Encoding
+73,categorical__product_name_Printer Cartridge,Categorical,product_name_Printer Cartridge,Most Frequent Imputation + One-Hot Encoding
+74,categorical__product_name_Project Mgmt Subscription,Categorical,product_name_Project Mgmt Subscription,Most Frequent Imputation + One-Hot Encoding
+75,categorical__product_name_Router AC1200,Categorical,product_name_Router AC1200,Most Frequent Imputation + One-Hot Encoding
+76,categorical__product_name_Safety Helmet,Categorical,product_name_Safety Helmet,Most Frequent Imputation + One-Hot Encoding
+77,categorical__product_name_Safety Vest,Categorical,product_name_Safety Vest,Most Frequent Imputation + One-Hot Encoding
+78,categorical__product_name_Shipping Label Roll,Categorical,product_name_Shipping Label Roll,Most Frequent Imputation + One-Hot Encoding
+79,categorical__product_name_Smart Watch,Categorical,product_name_Smart Watch,Most Frequent Imputation + One-Hot Encoding
+80,categorical__product_name_Standing Desk,Categorical,product_name_Standing Desk,Most Frequent Imputation + One-Hot Encoding
+81,categorical__product_name_Stapler Heavy Duty,Categorical,product_name_Stapler Heavy Duty,Most Frequent Imputation + One-Hot Encoding
+82,categorical__product_name_Steel Bolts Box,Categorical,product_name_Steel Bolts Box,Most Frequent Imputation + One-Hot Encoding
+83,categorical__product_name_Sticky Notes Pack,Categorical,product_name_Sticky Notes Pack,Most Frequent Imputation + One-Hot Encoding
+84,categorical__product_name_Sugar Bag 10kg,Categorical,product_name_Sugar Bag 10kg,Most Frequent Imputation + One-Hot Encoding
+85,categorical__product_name_Tea Powder Box,Categorical,product_name_Tea Powder Box,Most Frequent Imputation + One-Hot Encoding
+86,categorical__product_name_USB-C Hub,Categorical,product_name_USB-C Hub,Most Frequent Imputation + One-Hot Encoding
+87,categorical__product_name_Uniform Set,Categorical,product_name_Uniform Set,Most Frequent Imputation + One-Hot Encoding
+88,categorical__product_name_Webcam HD,Categorical,product_name_Webcam HD,Most Frequent Imputation + One-Hot Encoding
+89,categorical__product_name_Wheat Flour 20kg,Categorical,product_name_Wheat Flour 20kg,Most Frequent Imputation + One-Hot Encoding
+90,categorical__product_name_Whiteboard Marker Set,Categorical,product_name_Whiteboard Marker Set,Most Frequent Imputation + One-Hot Encoding
+91,categorical__product_name_Wireless Mouse,Categorical,product_name_Wireless Mouse,Most Frequent Imputation + One-Hot Encoding
+92,categorical__product_name_Work Boots Pair,Categorical,product_name_Work Boots Pair,Most Frequent Imputation + One-Hot Encoding
+93,categorical__product_name_Work Gloves Pair,Categorical,product_name_Work Gloves Pair,Most Frequent Imputation + One-Hot Encoding
+94,categorical__vendor_id_VEND-0000,Categorical,vendor_id_VEND-0000,Most Frequent Imputation + One-Hot Encoding
+95,categorical__vendor_id_VEND-0001,Categorical,vendor_id_VEND-0001,Most Frequent Imputation + One-Hot Encoding
+96,categorical__vendor_id_VEND-0002,Categorical,vendor_id_VEND-0002,Most Frequent Imputation + One-Hot Encoding
+97,categorical__vendor_id_VEND-0003,Categorical,vendor_id_VEND-0003,Most Frequent Imputation + One-Hot Encoding
+98,categorical__vendor_id_VEND-0004,Categorical,vendor_id_VEND-0004,Most Frequent Imputation + One-Hot Encoding
+99,categorical__vendor_id_VEND-0005,Categorical,vendor_id_VEND-0005,Most Frequent Imputation + One-Hot Encoding
+100,categorical__vendor_id_VEND-0006,Categorical,vendor_id_VEND-0006,Most Frequent Imputation + One-Hot Encoding
+101,categorical__vendor_id_VEND-0007,Categorical,vendor_id_VEND-0007,Most Frequent Imputation + One-Hot Encoding
+102,categorical__vendor_id_VEND-0008,Categorical,vendor_id_VEND-0008,Most Frequent Imputation + One-Hot Encoding
+103,categorical__vendor_id_VEND-0009,Categorical,vendor_id_VEND-0009,Most Frequent Imputation + One-Hot Encoding
+104,categorical__vendor_id_VEND-0010,Categorical,vendor_id_VEND-0010,Most Frequent Imputation + One-Hot Encoding
+105,categorical__vendor_id_VEND-0011,Categorical,vendor_id_VEND-0011,Most Frequent Imputation + One-Hot Encoding
+106,categorical__vendor_id_VEND-0012,Categorical,vendor_id_VEND-0012,Most Frequent Imputation + One-Hot Encoding
+107,categorical__vendor_id_VEND-0013,Categorical,vendor_id_VEND-0013,Most Frequent Imputation + One-Hot Encoding
+108,categorical__vendor_id_VEND-0014,Categorical,vendor_id_VEND-0014,Most Frequent Imputation + One-Hot Encoding
+109,categorical__vendor_id_VEND-0015,Categorical,vendor_id_VEND-0015,Most Frequent Imputation + One-Hot Encoding
+110,categorical__vendor_id_VEND-0016,Categorical,vendor_id_VEND-0016,Most Frequent Imputation + One-Hot Encoding
+111,categorical__vendor_id_VEND-0017,Categorical,vendor_id_VEND-0017,Most Frequent Imputation + One-Hot Encoding
+112,categorical__vendor_id_VEND-0018,Categorical,vendor_id_VEND-0018,Most Frequent Imputation + One-Hot Encoding
+113,categorical__vendor_id_VEND-0019,Categorical,vendor_id_VEND-0019,Most Frequent Imputation + One-Hot Encoding
+114,categorical__vendor_id_VEND-0020,Categorical,vendor_id_VEND-0020,Most Frequent Imputation + One-Hot Encoding
+115,categorical__vendor_id_VEND-0021,Categorical,vendor_id_VEND-0021,Most Frequent Imputation + One-Hot Encoding
+116,categorical__vendor_id_VEND-0022,Categorical,vendor_id_VEND-0022,Most Frequent Imputation + One-Hot Encoding
+117,categorical__vendor_id_VEND-0023,Categorical,vendor_id_VEND-0023,Most Frequent Imputation + One-Hot Encoding
+118,categorical__vendor_id_VEND-0024,Categorical,vendor_id_VEND-0024,Most Frequent Imputation + One-Hot Encoding
+119,categorical__vendor_id_VEND-0025,Categorical,vendor_id_VEND-0025,Most Frequent Imputation + One-Hot Encoding
+120,categorical__vendor_id_VEND-0026,Categorical,vendor_id_VEND-0026,Most Frequent Imputation + One-Hot Encoding
+121,categorical__vendor_id_VEND-0027,Categorical,vendor_id_VEND-0027,Most Frequent Imputation + One-Hot Encoding
+122,categorical__vendor_id_VEND-0028,Categorical,vendor_id_VEND-0028,Most Frequent Imputation + One-Hot Encoding
+123,categorical__vendor_id_VEND-0029,Categorical,vendor_id_VEND-0029,Most Frequent Imputation + One-Hot Encoding
+124,categorical__customer_country_Australia,Categorical,customer_country_Australia,Most Frequent Imputation + One-Hot Encoding
+125,categorical__customer_country_Canada,Categorical,customer_country_Canada,Most Frequent Imputation + One-Hot Encoding
+126,categorical__customer_country_Germany,Categorical,customer_country_Germany,Most Frequent Imputation + One-Hot Encoding
+127,categorical__customer_country_India,Categorical,customer_country_India,Most Frequent Imputation + One-Hot Encoding
+128,categorical__customer_country_Japan,Categorical,customer_country_Japan,Most Frequent Imputation + One-Hot Encoding
+129,categorical__customer_country_Singapore,Categorical,customer_country_Singapore,Most Frequent Imputation + One-Hot Encoding
+130,categorical__customer_country_UAE,Categorical,customer_country_UAE,Most Frequent Imputation + One-Hot Encoding
+131,categorical__customer_country_UK,Categorical,customer_country_UK,Most Frequent Imputation + One-Hot Encoding
+132,categorical__customer_country_USA,Categorical,customer_country_USA,Most Frequent Imputation + One-Hot Encoding
+133,categorical__customer_state_Arizona,Categorical,customer_state_Arizona,Most Frequent Imputation + One-Hot Encoding
+134,categorical__customer_state_Bavaria,Categorical,customer_state_Bavaria,Most Frequent Imputation + One-Hot Encoding
+135,categorical__customer_state_Berlin,Categorical,customer_state_Berlin,Most Frequent Imputation + One-Hot Encoding
+136,categorical__customer_state_British Columbia,Categorical,customer_state_British Columbia,Most Frequent Imputation + One-Hot Encoding
+137,categorical__customer_state_California,Categorical,customer_state_California,Most Frequent Imputation + One-Hot Encoding
+138,categorical__customer_state_Delhi,Categorical,customer_state_Delhi,Most Frequent Imputation + One-Hot Encoding
+139,categorical__customer_state_Dubai,Categorical,customer_state_Dubai,Most Frequent Imputation + One-Hot Encoding
+140,categorical__customer_state_England,Categorical,customer_state_England,Most Frequent Imputation + One-Hot Encoding
+141,categorical__customer_state_Gujarat,Categorical,customer_state_Gujarat,Most Frequent Imputation + One-Hot Encoding
+142,categorical__customer_state_Illinois,Categorical,customer_state_Illinois,Most Frequent Imputation + One-Hot Encoding
+143,categorical__customer_state_Karnataka,Categorical,customer_state_Karnataka,Most Frequent Imputation + One-Hot Encoding
+144,categorical__customer_state_Maharashtra,Categorical,customer_state_Maharashtra,Most Frequent Imputation + One-Hot Encoding
+145,categorical__customer_state_Massachusetts,Categorical,customer_state_Massachusetts,Most Frequent Imputation + One-Hot Encoding
+146,categorical__customer_state_New South Wales,Categorical,customer_state_New South Wales,Most Frequent Imputation + One-Hot Encoding
+147,categorical__customer_state_New York,Categorical,customer_state_New York,Most Frequent Imputation + One-Hot Encoding
+148,categorical__customer_state_Ontario,Categorical,customer_state_Ontario,Most Frequent Imputation + One-Hot Encoding
+149,categorical__customer_state_Rajasthan,Categorical,customer_state_Rajasthan,Most Frequent Imputation + One-Hot Encoding
+150,categorical__customer_state_Singapore,Categorical,customer_state_Singapore,Most Frequent Imputation + One-Hot Encoding
+151,categorical__customer_state_Tamil Nadu,Categorical,customer_state_Tamil Nadu,Most Frequent Imputation + One-Hot Encoding
+152,categorical__customer_state_Telangana,Categorical,customer_state_Telangana,Most Frequent Imputation + One-Hot Encoding
+153,categorical__customer_state_Texas,Categorical,customer_state_Texas,Most Frequent Imputation + One-Hot Encoding
+154,categorical__customer_state_Tokyo,Categorical,customer_state_Tokyo,Most Frequent Imputation + One-Hot Encoding
+155,categorical__customer_state_Uttar Pradesh,Categorical,customer_state_Uttar Pradesh,Most Frequent Imputation + One-Hot Encoding
+156,categorical__customer_state_Victoria,Categorical,customer_state_Victoria,Most Frequent Imputation + One-Hot Encoding
+157,categorical__customer_state_Washington,Categorical,customer_state_Washington,Most Frequent Imputation + One-Hot Encoding
+158,categorical__customer_state_West Bengal,Categorical,customer_state_West Bengal,Most Frequent Imputation + One-Hot Encoding
+159,categorical__customer_city_Ahmedabad,Categorical,customer_city_Ahmedabad,Most Frequent Imputation + One-Hot Encoding
+160,categorical__customer_city_Bengaluru,Categorical,customer_city_Bengaluru,Most Frequent Imputation + One-Hot Encoding
+161,categorical__customer_city_Berlin,Categorical,customer_city_Berlin,Most Frequent Imputation + One-Hot Encoding
+162,categorical__customer_city_Birmingham,Categorical,customer_city_Birmingham,Most Frequent Imputation + One-Hot Encoding
+163,categorical__customer_city_Boston,Categorical,customer_city_Boston,Most Frequent Imputation + One-Hot Encoding
+164,categorical__customer_city_Chennai,Categorical,customer_city_Chennai,Most Frequent Imputation + One-Hot Encoding
+165,categorical__customer_city_Chicago,Categorical,customer_city_Chicago,Most Frequent Imputation + One-Hot Encoding
+166,categorical__customer_city_Delhi,Categorical,customer_city_Delhi,Most Frequent Imputation + One-Hot Encoding
+167,categorical__customer_city_Dubai,Categorical,customer_city_Dubai,Most Frequent Imputation + One-Hot Encoding
+168,categorical__customer_city_Houston,Categorical,customer_city_Houston,Most Frequent Imputation + One-Hot Encoding
+169,categorical__customer_city_Hyderabad,Categorical,customer_city_Hyderabad,Most Frequent Imputation + One-Hot Encoding
+170,categorical__customer_city_Jaipur,Categorical,customer_city_Jaipur,Most Frequent Imputation + One-Hot Encoding
+171,categorical__customer_city_Kolkata,Categorical,customer_city_Kolkata,Most Frequent Imputation + One-Hot Encoding
+172,categorical__customer_city_London,Categorical,customer_city_London,Most Frequent Imputation + One-Hot Encoding
+173,categorical__customer_city_Los Angeles,Categorical,customer_city_Los Angeles,Most Frequent Imputation + One-Hot Encoding
+174,categorical__customer_city_Lucknow,Categorical,customer_city_Lucknow,Most Frequent Imputation + One-Hot Encoding
+175,categorical__customer_city_Manchester,Categorical,customer_city_Manchester,Most Frequent Imputation + One-Hot Encoding
+176,categorical__customer_city_Melbourne,Categorical,customer_city_Melbourne,Most Frequent Imputation + One-Hot Encoding
+177,categorical__customer_city_Mumbai,Categorical,customer_city_Mumbai,Most Frequent Imputation + One-Hot Encoding
+178,categorical__customer_city_Munich,Categorical,customer_city_Munich,Most Frequent Imputation + One-Hot Encoding
+179,categorical__customer_city_New York,Categorical,customer_city_New York,Most Frequent Imputation + One-Hot Encoding
+180,categorical__customer_city_Phoenix,Categorical,customer_city_Phoenix,Most Frequent Imputation + One-Hot Encoding
+181,categorical__customer_city_Pune,Categorical,customer_city_Pune,Most Frequent Imputation + One-Hot Encoding
+182,categorical__customer_city_San Francisco,Categorical,customer_city_San Francisco,Most Frequent Imputation + One-Hot Encoding
+183,categorical__customer_city_Seattle,Categorical,customer_city_Seattle,Most Frequent Imputation + One-Hot Encoding
+184,categorical__customer_city_Singapore,Categorical,customer_city_Singapore,Most Frequent Imputation + One-Hot Encoding
+185,categorical__customer_city_Sydney,Categorical,customer_city_Sydney,Most Frequent Imputation + One-Hot Encoding
+186,categorical__customer_city_Tokyo,Categorical,customer_city_Tokyo,Most Frequent Imputation + One-Hot Encoding
+187,categorical__customer_city_Toronto,Categorical,customer_city_Toronto,Most Frequent Imputation + One-Hot Encoding
+188,categorical__customer_city_Vancouver,Categorical,customer_city_Vancouver,Most Frequent Imputation + One-Hot Encoding
+189,categorical__amount_bucket_High Amount,Categorical,amount_bucket_High Amount,Most Frequent Imputation + One-Hot Encoding
+190,categorical__amount_bucket_Low Amount,Categorical,amount_bucket_Low Amount,Most Frequent Imputation + One-Hot Encoding
+191,categorical__amount_bucket_Medium Amount,Categorical,amount_bucket_Medium Amount,Most Frequent Imputation + One-Hot Encoding
+192,categorical__amount_bucket_Very High Amount,Categorical,amount_bucket_Very High Amount,Most Frequent Imputation + One-Hot Encoding
+193,sales_rep_frequency,Frequency Encoded,sales_rep,Training Data Frequency Encoding

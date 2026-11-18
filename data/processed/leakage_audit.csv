@@ -1,0 +1,6 @@
+Audit_Check,Result
+Original predictor leakage,PASS
+Encoded feature leakage,PASS
+Target separation,PASS
+Chronological split,PASS
+Late payment examples,NO POSITIVE EXAMPLES
